@@ -63,37 +63,59 @@ body{
 /*top section styles*/
 .top{
     display: flex;
+    flex-direction: column;
+    align-content: center;
     color:black;
 }
 
-#title-name{
+.name h1{
     display: flex;
     justify-content: space-evenly;
     color: #000000;
 }
-
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /* background img */
-.bg-img{
-    background-image: url(https://i.imgur.com/IZA9L0c.jpg);
+.bg-img img{
+    /* background-image: url(https://i.imgur.com/IZA9L0c.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    position:sticky;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /*bottom section styles*/
 .bottom{
     display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .project-gallery{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    padding:20px;
 }
 .project-description{
     display: flex;
+    justify-content: center;
 }
 .contact-button{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
 }
