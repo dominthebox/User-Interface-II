@@ -62,7 +62,8 @@ body{
 }
 /*top section styles*/
 .top{
-    color:whitesmoke;
+    display: flex;
+    color:black;
 }
 
 #title-name{
@@ -83,4 +84,16 @@ body{
 
 
 /*bottom section styles*/
-
+.bottom{
+    display: flex;
+}
+.project-gallery{
+    display: flex;
+}
+.project-description{
+    display: flex;
+}
+.contact-button{
+    display: flex;
+    flex-direction: column-reverse;
+}
