@@ -50,47 +50,88 @@ table {
 *{
     box-sizing: border-box;
     max-width: 100%;
+    padding: 0;
+    margin: 0;
     border: 1px solid grey;
 }
 html{
     font-size: 62.5%;
+    color:dimgray;
 }
 body{
     font-size: 1.6rem;
+    font-family: 'Raleway';
     line-height: 1.5;
     max-width: 100%;
+    background-color: black;
 }
 /*top section styles*/
-.top{
+#top{
     display: flex;
     flex-direction: column;
     align-content: center;
-    color:black;
 }
 
 .name h1{
     display: flex;
     justify-content: space-evenly;
-    color: #000000;
+    font-size: 6rem;
 }
-.portfolio{
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: space-between; */
+    font-size: 2rem;
+}
+nav a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 10%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 2;
+    color: dimgray;
+    transition: 2s;
+  }
+  nav a:link, a:visited, a:focus {
+    background:black;
+  }
+  
+  nav a:hover {
+    background:silver;
+    color: black;
+  }
+  
+  nav a:active {
+    background:skyblue;
+    color: black;
+  }
+.intro-title h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 .intro-summary{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 
 /* background img */
-.bg-img img{
-    /* background-image: url(https://i.imgur.com/IZA9L0c.jpg);
+#bg-img img{
+    /*background-image: url(../portfolio-img.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
+    background-position: center;*/
     position:sticky;
     max-width: 100%;
     height: auto;
@@ -98,14 +139,16 @@ body{
 
 
 /*bottom section styles*/
-.bottom{
+#bottom{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
 }
 .project-gallery{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
     align-content: space-evenly;
     padding:20px;
@@ -114,8 +157,9 @@ body{
     display: flex;
     justify-content: center;
 }
-.contact-button{
+.contact-me{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
