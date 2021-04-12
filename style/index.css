@@ -1,1 +1,121 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* General Stylings*/
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 100%;
+}
+/*top section styles*/
+.top{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color:black;
+}
+
+.name h1{
+    display: flex;
+    justify-content: space-evenly;
+    color: #000000;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* background img */
+.bg-img img{
+    /* background-image: url(https://i.imgur.com/IZA9L0c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    position:sticky;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*bottom section styles*/
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.project-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    padding:20px;
+}
+.project-description{
+    display: flex;
+    justify-content: center;
+}
+.contact-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
