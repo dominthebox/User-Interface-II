@@ -52,7 +52,7 @@ table {
     max-width: 100%;
     padding: 0;
     margin: 0;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 html{
     font-size: 62.5%;
@@ -102,6 +102,7 @@ nav a {
   nav a:hover {
     background:silver;
     color: black;
+    border-radius: 8px;
   }
   
   nav a:active {
@@ -164,4 +165,41 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:800px){
+
+}
+@media (max-width:500px){
+    .name h1{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 5rem;
+    }
+    .links{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .intro-title{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .intro-summary{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #bottom{
+        flex-wrap: wrap;
+    }
+    .project-gallery{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .project-gallery img{
+        width: 45%;
+    }
+    .project-description{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
